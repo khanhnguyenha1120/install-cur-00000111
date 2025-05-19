@@ -1,5 +1,16 @@
 #!/bin/bash
 
+
+# Cập nhật hệ thống
+echo "Cập nhật hệ thống..."
+apt update && apt upgrade -y
+
+# Cài đặt các gói cần thiết
+echo "Cài đặt wget và gpg..."
+apt install wget gpg -y
+
+sudo apt update && sudo apt install libfuse2
+
 # Script to install Cursor on Ubuntu
 # https://www.cursor.com/
 
